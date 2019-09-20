@@ -3,42 +3,48 @@
     "pages/page1/page1",
     "pages/page2/page2",
     "pages/page3/page3",
-    "pages/page4/page4"
+    "pages/page4/page4",
+    "pages/page5/page5"
   ],
   "window": {
     "navigationBarTitleText": "FaShop",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#10c785",
+    "navigationBarTextStyle": "white",
     "backgroundTextStyle": "dark",
     "backgroundColorTop": "#F8F8F8",
     "backgroundColorBottom": "#F8F8F8"
   },
-  "sitemapLocation": "sitemap.json",
   "tabBar": {
     "color": "#aaa",
     "backgroundColor": "#fff",
     "borderStyle": "black",
-    "selectedColor": "#ff635c",
+    "selectedColor": "#11c785",
     "list": [{
       "pagePath": "pages/page1/page1",
       "text": "首页",
-      "iconPath": "images/tabber/home.png",
-      "selectedIconPath": "images/tabber/home-a.png"
+      "iconPath": "images/tabber/tab-icon1.png",
+      "selectedIconPath": "images/tabber/tab-icon1-select.png"
     },{
       "pagePath": "pages/page2/page2",
-      "text": "好店",
-      "iconPath": "images/tabber/category.png",
-      "selectedIconPath": "images/tabber/category-a.png"
+      "text": "店铺",
+      "iconPath": "images/tabber/tab-icon2.png",
+      "selectedIconPath": "images/tabber/tab-icon2-select.png"
     },{
       "pagePath": "pages/page3/page3",
-      "text": "赠品铺",
-      "iconPath": "images/tabber/cart.png",
-      "selectedIconPath": "images/tabber/cart-a.png"
+      "text": "商城",
+      "iconPath": "images/tabber/tab-icon3.png",
+      "selectedIconPath": "images/tabber/tab-icon3-select.png"
     },{
       "pagePath": "pages/page4/page4",
+      "text": "便民",
+      "iconPath": "images/tabber/tab-icon4.png",
+      "selectedIconPath": "images/tabber/tab-icon4-select.png"
+    },
+    {
+      "pagePath": "pages/page5/page5",
       "text": "我的",
-      "iconPath": "images/tabber/user.png",
-      "selectedIconPath": "images/tabber/user-a.png"
+      "iconPath": "images/tabber/tab-icon5.png",
+      "selectedIconPath": "images/tabber/tab-icon5-select.png"
     }]
   }
 }

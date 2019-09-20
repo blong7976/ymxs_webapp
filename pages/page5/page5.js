@@ -1,27 +1,13 @@
-// pages/page1/page1.js
+// pages/page5/page5.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      '../../images/banner.png',
-      '../../images/banner.png',
-      '../../images/banner.png',
-      '../../images/banner.png'
-    ],
-    current:0
-  },
-  swiperChange: function (e) {
-    let that = this;
-    if (e.detail.source == 'touch') {
-      that.setData({
-        current: e.detail.current,
 
-      })
-    }
-  }, 
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

@@ -8,3 +8,71 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+/* 店铺列表 */
+
+
+.V_title{
+  font-size: 32rpx;
+  color: #333;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 20rpx 24rpx 20rpx 50rpx;
+  position: relative;
+  border-bottom: 1px solid #f6f6f6;
+}
+.V_title::after{
+  content: "";
+  height: 40rpx;
+  width: 8rpx;
+  position: absolute;
+  left: 24rpx;
+  background: #10c785;
+  top: 20rpx;
+}
+.store .li{
+  padding: 24rpx;
+  border-bottom: 1px solid #f6f6f6;
+  min-height: 176rpx;
+  padding-left: 200rpx;
+  position: relative;
+}
+.store .imgbox{
+  position: absolute;
+  left: 24rpx;
+  top: 24rpx;
+}
+.store .Img,.store .imgbox{
+  width: 176rpx;
+  height: 176rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.store .li .content{
+  padding-left: 20rpx;
+  padding-top: 12rpx;
+  box-sizing: border-box;
+}
+.store .li .content .name{
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.store .li .content .des{
+  font-size: 26rpx;
+  color: #999;
+  margin-bottom: 20rpx;
+}
+.store .li .content .activity{
+  font-size: 24rpx;
+  color: #f96d56;
+  display: flex;
+  justify-content: space-between;
+}
+.store .li .content .rt{
+  font-size: 28rpx;
+  color: #999;
+  margin-left: 30rpx;
+}

@@ -1,2 +1,70 @@
-<!--pages/page1/page1.wxml-->
-<text>pages/page1/page1.wxml</text>
+<view class="head_wrapper">
+  <view class='div'>
+    新加坡
+    <image src='../../images/down.png' class='icon'></image>
+  </view>
+  <view class='div'>
+    <image src='../../images/seach-icon.png' class='icon'></image>
+    <input placeholder='请输入好店铺名称关键词' class='input'></input>
+  </view>
+  <view class='div'>
+     <image src='../../images/language.png' class='icon'></image>
+  </view>
+</view>
+
+
+<view class='swiper'>
+<swiper  indicator-color='#fff' indicator-active-color='#10c985' autoplay='true' bindchange="swiperChange">
+  <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="100%" height="100%"/>
+    </swiper-item>
+  </block>
+</swiper>
+  <view class="dots">
+    <block wx:for="{{imgUrls}}" wx:key="*">
+      <view class="dot {{index == current ? 'active' : ''}}"></view>
+    </block>
+  </view> 
+</view>
+
+
+<view class='nav'>
+  <view class='ul'>
+    <view class='li'>
+      <image src='../../images/page1-nav1.png' class='icon'></image>
+      <view class='name'>扫一扫</view>
+    </view>
+    <view class='li'>
+      <image src='../../images/page1-nav2.png' class='icon'></image>
+      <view class='name'>收款</view>
+    </view>
+    <view class='li'>
+      <image src='../../images/page1-nav3.png' class='icon'></image>
+      <view class='name'>付款</view>
+    </view>
+    <view class='li'>
+      <image src='../../images/page1-nav4.png' class='icon'></image>
+      <view class='name'>卡包</view>
+    </view>
+  </view>
+
+  <image src='../../images/Advertisement.jpg' class='bgimg'></image>
+</view>
+
+
+<view class='store'>
+  <view class='V_title'>优选店铺</view>
+  <view class='list'>
+     <view class='li' wx:for="{{6}}" wx:key="*">
+        <view class='imgbox'>
+          <image src='../../images/dianpu.png' class='Img'></image>
+        </view>
+        <view class='content'>
+           <view class='name'>喜缘烟酒商行喜缘烟酒商行 <text class='rt'>1km</text></view>
+           <view class='des'>上海市闵行区</view>
+           <view class='activity'>全场满2000减200<text class='rt'>534人已购</text></view>
+        </view>
+     </view> 
+  </view>
+</view>

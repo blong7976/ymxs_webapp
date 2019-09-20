@@ -1,1 +1,132 @@
 /* pages/page1/page1.wxss */
+.head_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 24rpx;
+  background: #10c785;
+}
+.head_wrapper>.div{
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  align-items: center;
+}
+.head_wrapper>.div:first-child{
+  color: #fff;
+  font-size: 32rpx;
+  margin-right: 24rpx;
+}
+.head_wrapper>.div:first-child .icon{
+  width: 32rpx;
+  height: 32rpx;
+  margin-top:-6rpx;
+}
+.head_wrapper>.div:nth-child(2){
+  background: #fff;
+  border-radius: 30rpx;
+  flex: 1;
+  padding-left: 65rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.head_wrapper>.div:nth-child(2) .icon{
+  width: 26rpx;
+  height: 28rpx;
+  position: absolute;
+  left: 25rpx;
+}
+.head_wrapper>.div:nth-child(2) .input{
+  width: 96%;
+  font-size: 28rpx;
+}
+.head_wrapper>.div:last-child{
+  margin-left: 24rpx;
+}
+.head_wrapper>.div:last-child .icon{
+  width: 46rpx;
+  height: 40rpx;
+}
+
+/* swiper */
+.swiper{position: relative}
+.swiper,swiper{
+  width: 100%;height: 440rpx;
+}
+.swiper .slide-image{
+  height: 100%;width: 100%;
+}
+.imageCount {
+  width:120rpx;
+  height:50rpx;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius:40rpx;
+  line-height:50rpx;
+  color:#fff;
+  text-align:center;
+  font-size:26rpx;
+  position:absolute;
+  left:13px;
+  bottom:20rpx;
+}
+
+
+.dots{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 115rpx;
+  display: flex;
+  justify-content: center;
+}
+.dots .dot{
+  margin: 0 5rpx;
+  width: 12rpx;
+  height: 12rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  transition: all .6s;
+}
+.dots .dot.active{
+  width: 40rpx;
+  background: #10c985;
+} 
+
+
+.nav{
+  padding: 0 24rpx 24rpx;
+  position: relative;
+  top: -100rpx;
+}
+.nav .ul{
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+.nav .ul .li{
+  text-align: center;
+}
+.nav .ul .li .icon{
+  width: 120rpx;height: 120rpx;
+}
+.nav .ul .li .name{
+  font-size: 30rpx;
+  color: #333;
+}
+
+.nav .bgimg{
+  width: 100%;
+  height: 140rpx;
+  margin-top: 45rpx;
+}
+
+
+.store{
+  margin-top: -100rpx;
+  border-top: 20rpx solid #f6f6f6;
+}
