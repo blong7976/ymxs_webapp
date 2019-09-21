@@ -30,6 +30,26 @@
   background: #10c785;
   top: 20rpx;
 }
+.V_title.move::after{
+  display: none;
+}
+.V_title.move{
+  padding-left: 24rpx;
+}
+.V_title.move .icon{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+  vertical-align: middle;
+}
+.V_title.move .dg{
+  width: 14rpx;
+  height: 26rpx;
+  position: absolute;
+  right: 24rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .store .li{
   padding: 24rpx;
   border-bottom: 1px solid #f6f6f6;
@@ -101,4 +121,94 @@
 .store .li .content .price{
   font-size: 36rpx;
   color: #fa6736;
+}
+
+
+/* 同城圈子列表 */
+.Circle .li{
+  padding: 24rpx;
+  border-bottom: 1px solid #f6f6f6;
+  min-height: 176rpx;
+  padding-left: 118rpx;
+  position: relative;
+}
+.Circle .li .imgbox{
+  position: absolute;
+  left: 24rpx;
+  top: 24rpx;
+}
+.Circle .li .imgbox .Img,.Circle .li .imgbox{
+  width: 76rpx;
+  height: 76rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #efefef;
+}
+.Circle .li .content .name{
+  font-size: 26rpx;
+  color: #57636f;
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Circle .li .content .name .rt{
+  background: #11ba5f;
+  font-size: 24rpx;
+  color: #fff;
+  padding: 8rpx 20rpx;
+  border-top-right-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+}
+.Circle .li .content .des{
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 10rpx;
+}
+.Circle .li .content .date .t{
+  font-size: 24rpx;
+  color: #999;
+  line-height: 1.5;
+  margin-bottom: 20rpx;
+  padding-right: 20rpx;
+  position: relative;
+}
+.Circle .li .content .date .t:last-child{
+  padding-left: 20rpx;
+}
+.Circle .li .content .date .t:last-child::after{
+  content: "";
+  width: 1px;
+  height: 24rpx;
+  background: #999;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.Circle .li .content .imglist{
+  overflow: hidden;
+}
+.Circle .li .content .imglist .Imgbox:nth-child(n+10){
+  display: none;
+}
+.Circle .li .content .imglist .col .Imgbox{
+  width: 300rpx;
+  height: 400rpx;
+  background-color: #efefef;
+  margin: 5rpx 0 10rpx;
+}
+.Circle .li .content .imglist .col-33 .Imgbox{
+  width: 180rpx;
+  height: 180rpx;
+  background-color: #efefef;
+  margin: 12rpx 12rpx 12rpx 0;
+  float: left;
+}
+.Circle .li .content .imglist .col-33 .Imgbox:nth-child(n+4){
+  margin-top: 0;
+}
+.Circle .li .content .imglist .Imgbox .img{
+  width: 100%;height: 100%;
 }

@@ -1,2 +1,74 @@
-<!--pages/page4/page4.wxml-->
-<text>pages/page4/page4.wxml</text>
+<view class='swiper'>
+<swiper indicator-dots="true"  indicator-color='#fff' indicator-active-color='#10c985' autoplay='true'>
+  <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="100%" height="100%"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+
+<view class='Publicity'>
+  浏览：<text class='c'>9999+</text>
+  发布：<text class='c'>18652</text>
+  店铺：<text class='c'>3682</text>
+</view>
+
+<view class='nav'>
+  <view class='ul'>
+    <view class='li' wx:for="{{navlist}}" wx:key="*">
+      <image src='{{item.icon}}' class='icon'></image>
+      <view class='name'>{{item.name}}</view>
+    </view>
+  </view>
+</view>
+
+
+<view class='Notice'>
+<swiper  vertical="true" indicator-color='#fff' indicator-active-color='#10c985' autoplay='true'>
+  <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+    <swiper-item>
+      <view class='imgbox'>
+        <image src="../../images/dianpu.png" class="slide-image" width="100%" height="100%"/>
+      </view>
+      <view class='body'>
+        华南地区天猫商城一般纳税人圳地区理发器+卷直发器旗舰店第8类R标公司名下可以过户不可贴牌舰店第8类R标公司名下可以过户不可贴牌舰店第8类R标公司名下可以过户不可贴牌舰店第8类R标公司名下可以过户不可贴牌
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+
+
+<view class='Circle'>
+  <view class='V_title move'><image src='../../images/info-icon.png' class='icon'></image>同城信息 <image src='../../images/li-move.png' class='dg'></image></view>
+  <view class='list'>
+     <view class='li' wx:for="{{imglist}}" wx:key="*">
+        <view class='imgbox'>
+          <image src='{{item.authorIcon}}' class='Img' mode="aspectFill" lazy-load="true"></image>
+        </view>
+        <view class='content'>
+           <view class='name'>狮城哔哔 <text class='rt' bindtap='bindMakePhoneCall'>联系Ta</text></view>
+           <view class='des'>诚信长期出售，各种款式踏板摩托车，大排量机车 雅马哈 本田 铃木 川崎 哈雷 宝马 质量保证</view>
+           <view class='imglist' wx:if="{{item.picture.length>0}}">
+             <!-- 
+                1张图是 col , 
+                2=>9张图是 col-33 
+              -->
+              <view class='{{item.picture.length==1?"col":"col-33"}}'>
+                <view class='Imgbox' wx:for="{{item.picture}}" wx:key="*">
+                  <image src='{{item}}' class='img' mode="aspectFill" lazy-load="true"></image>
+                </view>
+              </view>
+           </view>
+           <view class='date'><text class='t'>52浏览</text><text class='t'>2星期前</text><text class='t'>二手摩托车</text></view>
+        </view>
+     </view> 
+  </view>
+</view>
+
+
+<view class='ReleaseBtn'>
+  <image src='../../images/send.png' class='icon'></image>
+  <text class='btn'>发布</text>
+</view>

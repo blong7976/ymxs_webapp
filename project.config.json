@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -53,6 +53,20 @@
 					"id": -1,
 					"name": "商城",
 					"pathName": "pages/page3/page3",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "便民",
+					"pathName": "pages/page4/page4",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/page5/page5",
 					"scene": null
 				}
 			]

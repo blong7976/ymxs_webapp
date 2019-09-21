@@ -1,1 +1,100 @@
-/* pages/page5/page5.wxss */
+page{
+  background-color: #f8f8f8;
+}
+.user{
+  padding: 40rpx 24rpx 70rpx 174rpx;
+  background: #10c785;
+  min-height: 120rpx;
+}
+.user .imgbox{
+  width: 124rpx;
+  height: 124rpx;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 24rpx;
+  top: 40rpx;
+}
+.user .imgbox .img{
+  width: 100%;height: 100%;
+}
+.user .info{
+  color: #fff;
+  height: 124rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user .info .code{
+  width: 50rpx;
+  height: 50rpx;
+}
+.user .info .name{
+  font-size: 36rpx;
+  margin-bottom: 20rpx;
+}
+.user .info .Grade{
+  font-size: 24rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #fff;
+  background: rgba(0,0,0,.2);
+  display: inline-block;
+  padding: 0 25rpx;
+  border-radius: 22rpx;
+}
+
+
+
+.nav{
+  padding: 30rpx 24rpx;
+}
+.nav .ul{
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40rpx;
+  border-radius: 12rpx;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+.nav .ul .li{
+  text-align: center;
+}
+.nav .ul .li .icon,
+.nav2 .ul .li .icon{
+  width: 55rpx;height: 55rpx;margin-bottom: 20rpx;
+}
+.nav .ul .li .name,
+.nav2 .ul .li .name{
+  font-size: 26rpx;
+  color: #666;
+}
+
+.nav2{
+  margin: 0 24rpx;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 12rpx;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+.nav2 .title{
+  font-size: 32rpx;
+  color: #333;
+  margin: 30rpx;
+  margin-bottom: 0;
+}
+.nav2 .ul{
+  padding: 20rpx 0;
+  overflow: hidden;
+}
+.nav2 .ul .li{
+  text-align: center;
+  width: 33.333%;
+  float: left;
+  padding: 20rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}

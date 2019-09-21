@@ -1,2 +1,61 @@
-<!--pages/page5/page5.wxml-->
-<text>pages/page5/page5.wxml</text>
+<view class="user">
+   <view class='imgbox'>
+      <image src="../../images/p4.png" class="img" width="100%" height="100%"/>
+   </view>
+   <view class='info'>
+      <view>
+        <view class='name'>马自达 3昂克赛拉</view>
+        <view class='Grade'>拓客会员</view>
+      </view>
+      <image src='../../images/ewm.png' class='code'></image>
+   </view>
+</view>
+
+
+<view class='nav'>
+  <view class='ul'>
+    <view class='li'>
+      <image src='../../images/me-icon1.png' class='icon' mode="aspectFill" lazy-load="true"></image>
+      <view class='name'>我的钱包</view>
+    </view>
+    <view class='li'>
+      <image src='../../images/me-icon2.png' class='icon' mode="aspectFill" lazy-load="true"></image>
+      <view class='name'>活动中心</view>
+    </view>
+    <view class='li'>
+      <image src='../../images/me-icon3.png' class='icon' mode="aspectFill" lazy-load="true"></image>
+      <view class='name'>拓客中心</view>
+    </view>
+    <view class='li'>
+      <image src='../../images/me-icon4.png' class='icon' mode="aspectFill" lazy-load="true"></image>
+      <view class='name'>我的收藏</view>
+    </view>
+  </view>
+</view>
+
+
+<view class='nav2'>
+  <view class='title'>我的功能</view>
+  <view class='ul'>
+    <view class='li'>
+      <image src='../../images/me-nav2-icon1.png' class='icon' mode="aspectFit" lazy-load="true"></image>
+      <view class='name'>地址管理</view>
+    </view>
+    <view class='li'>
+      <image src='../../images/me-nav2-icon2.png' class='icon' mode="aspectFill" lazy-load="true"></image>
+      <view class='name'>我的粉丝</view>
+    </view>
+    <view class='li'>
+      <image src='../../images/me-nav2-icon3.png' class='icon' mode="aspectFill" lazy-load="true"></image>
+      <view class='name'>商家入驻</view>
+    </view>
+    <view class='li'>
+      <image src='../../images/me-nav2-icon4.png' class='icon' mode="aspectFill" lazy-load="true"></image>
+      <view class='name'>我的客服</view>
+    </view>
+    <view class='li'>
+      <image src='../../images/me-nav2-icon5.png' class='icon' mode="aspectFill" lazy-load="true"></image>
+      <view class='name'>账号设置</view>
+    </view>
+  </view>
+</view>

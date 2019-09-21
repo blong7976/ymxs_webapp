@@ -1,1 +1,107 @@
-/* pages/page4/page4.wxss */
+/* swiper */
+.swiper{position: relative}
+.swiper,swiper{
+  width: 100%;height: 340rpx;
+}
+.slide-image{
+  height: 100%;width: 100%;
+}
+
+
+
+.Publicity{
+  background: #f8f8f8;
+  padding: 0 24rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.Publicity .c{
+  color: #ff6738;
+  margin-right: 10rpx;
+}
+
+
+.nav{
+  padding: 24rpx 0;
+  overflow: hidden;
+}
+.nav .ul{
+  background: #fff;
+  overflow: hidden;
+}
+.nav .ul .li{
+  text-align: center;
+  width: 20%;
+  float: left;
+  margin-bottom: 24rpx;
+}
+.nav .ul .li:nth-child(n+6){
+  margin-bottom: 0;
+}
+.nav .ul .li .icon{
+  width: 76rpx;height: 76rpx;
+}
+.nav .ul .li .name{
+  font-size: 26rpx;
+  color: #333;
+}
+
+
+.Notice{
+  border-top: 2px solid #f8f8f8;
+  border-bottom: 2px solid #f8f8f8;
+  height: 200rpx;
+  overflow: hidden;
+}
+.Notice swiper{
+  height: 200rpx;
+}
+.Notice swiper-item{
+  position: relative;
+  box-sizing: border-box;
+  padding:  24rpx 24rpx 24rpx 206rpx;
+  overflow: hidden;
+}
+.Notice swiper-item .imgbox{
+  width: 160rpx;
+  height: 160rpx;
+  position: absolute;
+  left: 24rpx;
+  top: 20rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.Notice swiper-item .body{
+   height: 160rpx;
+   line-height: 1.5;
+   font-size: 28rpx;
+   color: #666;
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+
+/* 发布按钮 */
+.ReleaseBtn{
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  right: 25rpx;
+  bottom: 200rpx;
+  background: #2ec077;
+  border-radius: 50%;
+  z-index: 999;
+  font-size: 24rpx;
+  color: #c0fddc;
+  text-align: center;
+  box-shadow: 0 0 10rpx #c0fddc;
+}
+.ReleaseBtn .icon{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin: 14rpx auto 0;
+}
