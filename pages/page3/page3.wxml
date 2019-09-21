@@ -1,2 +1,65 @@
-<!--pages/page3/page3.wxml-->
-<text>pages/page3/page3.wxml</text>
+<view class="head_wrapper">
+  <view class='div'>
+    <image src='../../images/seach-icon.png' class='icon'></image>
+    <input placeholder='请输入铺名称关键词' class='input'></input>
+  </view>
+</view>
+
+
+<view class='nav'>
+  <view class='ul'>
+    <view class='li' wx:for="{{navlist}}" wx:key="*">
+      <image src='{{item.icon}}' class='icon'></image>
+      <view class='name'>{{item.name}}</view>
+    </view>
+  </view>
+</view>
+
+
+<view class='Discount'>
+  <view class='child'>
+    <view class='title'>限时秒杀</view>
+    
+    <view class='tr'>
+      <view class='td' wx:for="{{2}}" wx:key="*">
+         <view class='des'>
+            <text class='t'>18点场</text>
+            <text class='t'>01:25:36</text>
+         </view>
+         <view class='imgbox'>
+            <image src='../../images/product2.png' class='img'></image>
+         </view>
+         <view class='price'>￥9.9</view> 
+      </view>
+    </view>
+  </view>
+  <view class='child'>
+    <view class='title'>积分兑换</view>
+    
+    <view class='tr'>
+      <view class='td' wx:for="{{2}}" wx:key="*">
+         <view class='des des-no'></view>
+         <view class='imgbox'>
+            <image src='../../images/product2.png' class='img'></image>
+         </view>
+         <view class='price'>￥9.9</view> 
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class='store'>
+  <view class='list'>
+     <view class='li' wx:for="{{6}}" wx:key="*">
+        <view class='imgbox'>
+          <image src='../../images/product.png' class='Img'></image>
+        </view>
+        <view class='content gm'>
+           <view class='name'>商品名称 </view>
+           <view class='des'>精选商品，品质保证<text class='buy'>立刻购买</text></view>
+           <view class='activity price'>￥59.00</view>
+        </view>
+     </view> 
+  </view>
+</view>

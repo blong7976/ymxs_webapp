@@ -1,1 +1,70 @@
-/* pages/page2/page2.wxss */
+.head_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 24rpx;
+  background: #10c785;
+}
+.head_wrapper>.div{
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  align-items: center;
+}
+.head_wrapper>.div{
+  background: #fff;
+  border-radius: 30rpx;
+  flex: 1;
+  padding-left: 65rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.head_wrapper>.div .icon{
+  width: 26rpx;
+  height: 28rpx;
+  position: absolute;
+  left: 25rpx;
+}
+.head_wrapper>.div .input{
+  width: 96%;
+  font-size: 28rpx;
+}
+
+
+
+.nav{
+  padding: 24rpx 0;
+  overflow: hidden;
+}
+.nav .ul{
+  background: #fff;
+  overflow: hidden;
+}
+.nav .ul .li{
+  text-align: center;
+  width: 25%;
+  float: left;
+  margin-bottom: 24rpx;
+}
+.nav .ul .li:nth-child(n+5){
+  margin-bottom: 0;
+}
+.nav .ul .li .icon{
+  width: 100rpx;height: 100rpx;
+}
+.nav .ul .li .name{
+  font-size: 28rpx;
+  color: #333;
+}
+
+
+
+
+.swiper{position: relative}
+.swiper,swiper{
+  width: 100%;height: 350rpx;
+}
+.swiper .slide-image{
+  height: 100%;width: 100%;
+}

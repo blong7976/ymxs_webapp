@@ -47,6 +47,7 @@
   height: 176rpx;
   border-radius: 20rpx;
   overflow: hidden;
+  background-color: #efefef;
 }
 .store .li .content{
   padding-left: 20rpx;
@@ -64,6 +65,8 @@
   font-size: 26rpx;
   color: #999;
   margin-bottom: 20rpx;
+  position: relative;
+  padding-right: 150rpx;
 }
 .store .li .content .activity{
   font-size: 24rpx;
@@ -75,4 +78,27 @@
   font-size: 28rpx;
   color: #999;
   margin-left: 30rpx;
+}
+
+/* 购买按钮 */
+.store .li .content.gm{
+  padding-top: 5rpx;
+}
+.store .li .content .des .buy{
+  position: absolute;
+  right: 0;
+  top: -12rpx;
+  display: block;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fb8217), color-stop(1, #fe4a00)); /* Saf4+, Chrome */
+  border-radius: 30rpx;
+  padding: 0 30rpx;
+}
+/* 商品价格 */
+.store .li .content .price{
+  font-size: 36rpx;
+  color: #fa6736;
 }
