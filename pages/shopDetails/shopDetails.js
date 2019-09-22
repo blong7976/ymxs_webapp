@@ -1,30 +1,30 @@
-// pages/page1/page1.js
+// pages/shopDetails/shopDetails.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      '../../images/banner.png',
-      '../../images/banner.png',
-      '../../images/banner.png',
-      '../../images/banner.png'
-    ],
-    current:0
+    selectPage:0,
+    list1: ["1", "1", "1", "1", "1"],
+    list2: ["1", "1"],
+    // 评分这里，最大5星 创建一个数组 marke， 根据返回的评分（number）push "Star-active.png" ,不满5的 push "Star.png"
+    marke:[
+      "../../images/Star-active.png",
+      "../../images/Star-active.png",
+      "../../images/Star-active.png",
+      "../../images/Star-active.png",
+      "../../images/Star.png"
+    ]
   },
-  swiperChange: function (e) {
-    let that = this;
-    if (e.detail.source == 'touch') {
-      that.setData({
-        current: e.detail.current,
-
-      })
-    }
-  }, 
+  handelTabs(e){
+    this.setData({
+      selectPage: e.currentTarget.dataset.idx
+    })
+  },
   detailes() {
     wx.navigateTo({
-      url: "/pages/shopDetails/shopDetails",
+      url: "/pages/goodDetails/goodDetails",
     })
   },
   /**

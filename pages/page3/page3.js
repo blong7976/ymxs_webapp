@@ -58,7 +58,11 @@ Page({
       }
     ],
   },
-
+  detailes(){
+    wx.navigateTo({
+      url: "/pages/goodDetails/goodDetails",
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

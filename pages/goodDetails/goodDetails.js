@@ -1,37 +1,45 @@
-// pages/page1/page1.js
+var app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      '../../images/banner.png',
-      '../../images/banner.png',
-      '../../images/banner.png',
-      '../../images/banner.png'
-    ],
-    current:0
-  },
-  swiperChange: function (e) {
-    let that = this;
-    if (e.detail.source == 'touch') {
-      that.setData({
-        current: e.detail.current,
 
-      })
-    }
-  }, 
-  detailes() {
-    wx.navigateTo({
-      url: "/pages/shopDetails/shopDetails",
+    statusBarHeight: '',
+    btuBottom: "",
+
+    imgUrls: [
+      '../../images/p1.png',
+      '../../images/p4.png',
+      '../../images/p2.png'
+    ],
+
+  },
+  black() {
+    wx.navigateBack({
+      delta: 1
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let self = this
+    wx.getSystemInfo({
+      success: function (res) {
+        console.log(res)
+        self.setData({
+          statusBarHeight: res.statusBarHeight
+        })
+      },
+    })
+    let isPhone = app.globalData.isIphoneX;
+    if (isPhone) {
+      this.setData({
+        btuBottom: "68rpx",
+      })
+    }
   },
 
   /**

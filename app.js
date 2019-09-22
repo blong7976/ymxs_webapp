@@ -33,7 +33,19 @@ App({
       }
     })
   },
+  onShow: function () {
+    let that = this;
+    wx.getSystemInfo({
+      success: res => {
+        let modelmes = res.model;
+        if (modelmes.search('iPhone X') != -1) {
+          that.globalData.isIphoneX = true
+        }
+      }
+    })
+  },
   globalData: {
+    isIphoneX: false,
     userInfo: null
   }
 })

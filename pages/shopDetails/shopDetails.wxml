@@ -1,0 +1,143 @@
+<view class="head_wrapper">
+  <view class='div'>
+    <image src='../../images/seach-icon.png' class='icon'></image>
+    <input placeholder='请输入店铺名称关键词' class='input'></input>
+  </view>
+  <view class='div'>
+     <image src='../../images/ewm.png' class='icon'></image>
+  </view>
+</view>
+
+
+<view class='shopbox'>
+  <view class='lt'>
+    <view class='active'>营业中</view>
+    <image src='../../images/timg.jpg' class='img'></image>
+  </view>
+  <view class='rt'>
+    <view class='name'>必胜客</view>
+    <view class='address'><image src='../../images/customer.png' class='icon'></image>美国的百胜餐饮集团</view>
+    <view class='distance'>
+      <view>
+        <image src='../../images/customer.png' class='icon'></image>距离约2800 km  
+      </view>
+      <view class='Navigation'>导航</view>
+    </view>
+    <view class='des'><image src='../../images/customer.png' class='icon'></image>欢迎光临 必胜客</view>
+    <view class='goods'>
+      <text class='lab'>比萨饼</text>
+      <text class='lab'>香草凤尾虾</text>
+      <text class='lab'>浓情香鸡翼</text>
+    </view>
+  </view>
+</view>
+
+
+<view class='nav'>
+  <view class='ul'>
+    <view class='li'>
+      <image src='../../images/wepay.png' class='icon'></image>
+      <view class='name'>付款买单</view>
+    </view>
+    <view class='li'>
+      <image src='../../images/header-card.png' class='icon'></image>
+      <view class='name'>店铺活动</view>
+    </view>
+    <view class='li'>
+      <image src='../../images/customer.png' class='icon'></image>
+      <view class='name'>设为默认</view>
+    </view>
+  </view>
+</view>
+
+
+<view class='tabs'>
+  <view class='{{selectPage==0?"item active":"item"}}' bindtap='handelTabs' data-idx="0">热销</view>
+  <view class='{{selectPage==1?"item active":"item"}}' bindtap='handelTabs' data-idx="1">优惠</view>
+  <view class='{{selectPage==2?"item active":"item"}}' bindtap='handelTabs' data-idx="2">商家</view>
+</view>
+
+<view class='tabpanel' wx:if="{{selectPage==0}}">
+  <view class='store'>
+    <view class='list'>
+      <view class='li' wx:for="{{list1}}" wx:key="*" bindtap='detailes'>
+          <view class='imgbox'>
+            <image src='../../images/product.png' class='Img'></image>
+          </view>
+          <view class='content gm'>
+            <view class='name'>商品名称 </view>
+            <view class='des'>精选商品，品质保证<text class='buy'>立刻购买</text></view>
+            <view class='activity price'>￥59.00</view>
+          </view>
+      </view> 
+    </view>
+  </view>
+</view>
+<view class='tabpanel' wx:if="{{selectPage==1}}">
+  <view class='Coupon'>
+    <view class='row' wx:for="{{list2}}" wx:key="*">
+      <view class='lt'>
+         <image src='../../images/timg.jpg' class='icon' mode="aspectFill" lazy-load></image>
+         <view class='title'>必胜客100元购物卡元购物卡</view>
+         <view class='foot'>
+            <view class='pirce'>￥100</view>
+            <view class='des'>消费满200减10元，每日一次</view>
+         </view>
+      </view>
+      <view class='rt'>
+         <view class='btn'><text>立即</text><text>领取</text></view>
+         <view class='msg'>剩余100%</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='tabpanel' wx:if="{{selectPage==2}}">
+ 
+ <view class='scroll-view'>
+   <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+    <view class="scroll-view-item" wx:for="{{4}}" wx:key="*">
+      <image src='../../images/product.png' class='img' mode="aspectFill" lazy-load></image>
+    </view>
+  </scroll-view>
+ </view>
+
+  <view class='list-group'>
+    <view class='list-item'>
+      <image src='../../images/customer.png' class='icon' mode="aspectFill"></image>
+      <text class='lt'>推荐值</text>
+      <view class='rt'>
+        <image wx:for="{{marke}}" wx:key="*" src='{{item}}' class='marker'></image>
+      </view>
+    </view>
+
+    <view class='list-item'>
+      <image src='../../images/customer.png' class='icon' mode="aspectFill"></image>
+      <text class='lt'>上海闵行区</text>
+      <view class='rt'>
+        <image src='../../images/li-move.png' class='move'></image>
+      </view>
+    </view>
+
+    <view class='list-item'>
+      <image src='../../images/customer.png' class='icon' mode="aspectFill"></image>
+      <text class='lt'>15102988385</text>
+      <view class='rt'>
+        <image src='../../images/li-move.png' class='move'></image>
+      </view>
+    </view>    
+
+    <view class='list-item'>
+      <image src='../../images/customer.png' class='icon' mode="aspectFill"></image>
+      <text class='lt'>8:00-12:00</text>
+      <view class='rt'>
+        
+      </view>
+    </view>
+
+  </view>
+</view>
+
+<view class='blank' wx:if="{{selectPage==0 && !list1[0] || selectPage==1 && !list2[0] }}">
+   <image src='../../images/blank.png' class='icon'></image>
+   <view class='t'>暂无内容</view>
+</view>

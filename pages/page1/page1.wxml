@@ -56,7 +56,7 @@
 <view class='store'>
   <view class='V_title'>优选店铺</view>
   <view class='list'>
-     <view class='li' wx:for="{{6}}" wx:key="*">
+     <view class='li' wx:for="{{6}}" wx:key="*" bindtap='detailes'>
         <view class='imgbox'>
           <image src='../../images/dianpu.png' class='Img'></image>
         </view>

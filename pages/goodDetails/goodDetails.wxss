@@ -1,0 +1,123 @@
+/* 返回按钮 */
+.blackBtn{
+  width: 64rpx;
+  height: 64rpx;
+  position: fixed;
+  z-index: 1000;
+  border-radius: 50%;
+  left: 30rpx;
+  background: rgba(0,0,0,.4);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.blackBtn .icon{
+  width: 19rpx;
+  height: 34rpx;
+}
+
+/* page */
+page{
+  background-color: #f8f8f8;
+}
+
+.swiper{position: relative}
+.swiper,swiper{
+  width: 100%;height: 600rpx;
+}
+.slide-image{
+  height: 100%;width: 100%;
+}
+
+
+.info{
+  padding:40rpx 24rpx;
+  background: #fff;
+}
+.info .name{
+  font-size: 34rpx;
+  color: #333;
+  margin-bottom: 24rpx;
+}
+.info .des{
+  font-size: 26rpx;
+  color: #666;
+}
+.info .foot{
+  margin-top: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info .foot .rt{
+  font-size: 28rpx;
+  color: #333;
+}
+.info .foot .lt{
+  font-size: 28rpx;
+}
+.info .foot .lt .p:first-child{
+  color: #e8443e;
+  font-size: 24rpx;
+}
+.info .foot .lt .p:first-child+.p{
+  color: #e8443e;
+  font-size: 40rpx;
+}
+.info .foot .lt .p:last-child{
+  font-size: 24rpx;
+  color: #999;
+}
+
+.model{
+  padding: 30rpx 24rpx;
+  background: #fff;
+  margin-top: 22rpx;
+  box-sizing: border-box;
+  padding-left: 120rpx;
+  position: relative;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.5;
+}
+.model .laber{
+  position: absolute;
+  left: 24rpx;
+  color: #666;
+}
+.details{
+  padding: 30rpx 24rpx;
+  background: #fff;
+  margin-top: 22rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.details .title{
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+.details .cn{
+  font-size: 28rpx;
+  line-height: 2;
+}
+.details .cn .image,
+.details .cn .img,
+.details .cn img{
+  width: 100%;
+  border-radius: 20rpx;
+}
+
+/* 底部 */
+.footer{
+  position: fixed;left: 0;right: 0;bottom: 0;height: 120rpx;background-color: rgb(255, 255, 255);z-index: 999;
+  box-shadow: 0px 0px 4px 0px rgba(136, 136, 136, 0.2);
+}
+.footer .pW{
+  margin-top: 20rpx;overflow: hidden;padding: 0 24rpx;box-sizing: border-box;
+}
+.footer .fd_btn{
+  height: 84rpx;line-height: 84rpx;padding: 0 20rpx;color: #fff;font-size: 32rpx;border-radius: 4px;text-align: center;
+  background:#fe4a00;
+}

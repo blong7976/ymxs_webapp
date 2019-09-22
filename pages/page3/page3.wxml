@@ -51,7 +51,7 @@
 
 <view class='store'>
   <view class='list'>
-     <view class='li' wx:for="{{6}}" wx:key="*">
+     <view class='li' wx:for="{{6}}" wx:key="*" bindtap='detailes'>
         <view class='imgbox'>
           <image src='../../images/product.png' class='Img'></image>
         </view>

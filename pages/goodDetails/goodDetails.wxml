@@ -1,0 +1,55 @@
+
+<view class='blackBtn' style='top:{{statusBarHeight+10.25}}px' bindtap='black'>
+  <image src='../../images/black.png' class='icon' mode="aspectFit"></image>
+</view>
+
+<view class='swiper'>
+<swiper indicator-dots="true"  indicator-color='#fff' indicator-active-color='#f4d20a' autoplay='true'>
+  <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="aspectFill" lazy-load="true" />
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+
+<view class='info'>
+  <view class='name'>诚信出售，各种款式踏板摩托车，大排量机车 雅马哈 本田 铃木 川崎 哈雷 宝马 质量保证</view>
+  <view class='des'>川崎小忍者，H2，R1，R6，R9，猛兽，GT，CBR等</view>
+  <view class='foot'>
+     <view class='lt'>
+      <text class='p'>￥</text><text  class='p'>23500</text>/台  <text  class='p'>￥24600</text>
+     </view>
+     <view class='rt'>已售 40298</view>
+  </view>
+</view>
+
+<view class='model'>
+   <view class='laber'>优惠：</view> 
+   <view class='cn'>每人每天购买不超过一台</view>
+</view>
+
+<view class='model'>
+   <view class='laber'>配送：</view> 
+   <view class='cn'>5个工作日</view>
+</view>
+
+<view class='model'>
+   <view class='laber'>详情：</view> 
+   <view class='cn'>大排量 质量保证 车况OK大排量 质量保证 车况OK大排量 质量保证 车况OK大排量 质量保证 车况OK大排量 质量保证 车况OK大排量 质量保证 车况OK</view>
+</view>
+
+<view class='details'>
+   <view class='title'>商品详情</view> 
+   <view class='cn'>大排量 质量保证 车况OK西安鱼化网销中心是西安鱼化二手车交易市场有限公司旗下核心组成部分，是西北五省二手车行业综合服务商，成立于2013-12-27，打造公平、公正、透明、健康成长的二手车交易服务平台，旗下拥有B2B模式二手车在线交易平台B2C模式的二手车交易平台。具有横跨二手车产业链的一站式服务能力。鱼化网销中心旗下有B2B二手车拍卖平台，以及上线的B2C品牌。
+   
+   </view>
+</view>
+
+<view class='warp' style='height:1px;padding-bottom:{{btuBottom}};margin-bottom:140rpx'></view>
+<!-- 底部导航 -->
+<cover-view class="footer" style='padding-bottom:{{btuBottom}}'>
+   <cover-view class='pW'>
+       <cover-view class='fd_btn '>立即购买</cover-view>  
+   </cover-view>
+</cover-view>

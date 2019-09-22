@@ -4,10 +4,12 @@
     "pages/page2/page2",
     "pages/page3/page3",
     "pages/page4/page4",
-    "pages/page5/page5"
+    "pages/page5/page5",
+    "pages/goodDetails/goodDetails",
+    "pages/shopDetails/shopDetails"
   ],
   "window": {
-    "navigationBarTitleText": "FaShop",
+    "navigationBarTitleText": "XXX",
     "navigationBarBackgroundColor": "#10c785",
     "navigationBarTextStyle": "white",
     "backgroundTextStyle": "dark",
