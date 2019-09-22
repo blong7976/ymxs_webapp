@@ -68,7 +68,7 @@
 </view>
 
 
-<view class='ReleaseBtn'>
+<view class='ReleaseBtn' bindtap='send'>
   <image src='../../images/send.png' class='icon'></image>
   <text class='btn'>发布</text>
 </view>

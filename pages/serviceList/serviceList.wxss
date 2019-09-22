@@ -38,3 +38,26 @@ page{
 .Circle{
   margin-top:88rpx; 
 }
+
+
+/* 发布按钮 */
+.ReleaseBtn{
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  right: 25rpx;
+  bottom: 200rpx;
+  background: #2ec077;
+  border-radius: 50%;
+  z-index: 999;
+  font-size: 24rpx;
+  color: #c0fddc;
+  text-align: center;
+  box-shadow: 0 0 10rpx #c0fddc;
+}
+.ReleaseBtn .icon{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin: 14rpx auto 0;
+}

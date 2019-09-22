@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -88,6 +88,13 @@
 					"id": -1,
 					"name": "便民服务列表",
 					"pathName": "pages/serviceList/serviceList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发布",
+					"pathName": "pages/Release/Release",
 					"scene": null
 				}
 			]

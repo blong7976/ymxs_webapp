@@ -133,6 +133,12 @@ Page({
       url: '/pages/serviceList/serviceList',
     })
   },
+
+  send(){
+    wx.navigateTo({
+      url: '/pages/Release/Release',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

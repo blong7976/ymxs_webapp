@@ -9,7 +9,8 @@
     "pages/shopDetails/shopDetails",
     "pages/serviceList/serviceList",
     "pages/shopList/shopList",
-    "pages/goodsList/goodsList"
+    "pages/goodsList/goodsList",
+    "pages/Release/Release"
   ],
   "window": {
     "navigationBarTitleText": "XXX",

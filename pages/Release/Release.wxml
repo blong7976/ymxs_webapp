@@ -1,0 +1,37 @@
+
+<view class='form'>
+  <view class='page-section'>
+    <textarea placeholder='请输入要发布的内容' auto-height></textarea>
+  </view>
+  <view class='page-section'>
+     <input class="weui-input" maxlength="11" placeholder="请输入您的手机号" />
+  </view>   
+  <view class='upload-section'>
+    <image wx:for="{{imglist}}" wx:key="*" src='{{item}}' class='img'></image>
+    <image src='../../images/icon_add.jpg' class='upload' bindtap='upload'></image>
+  </view>
+</view>
+<view class='muodel'>-我要置顶-</view>
+<view class='pricelist'>
+  <view class='row {{activeidx==index?"active":""}}' wx:for="{{4}}" wx:key="*">
+    <view class='bg'>
+        <view class='name'>40/天</view>
+        <view class='des'>2天</view>
+    </view>
+  </view>
+</view>
+<view class='extend'>
+  <view class='lt'>我要推广(可提高阅读量和传播量)</view>
+  <switch checked="{{switch1Checked}}" />
+</view>
+<view class='message'>发布违法信息需承担法律责任</view>
+
+<!-- 底部导航 -->
+<view class="footer" style='padding-bottom:{{btuBottom}}'>
+   <view class='lt'>
+       <view class=' '>合计：<text class='price'>￥0.00</text></view>  
+   </view>
+   <view class='pW'>
+       <view class='fd_btn '>现在发布</view>  
+   </view>
+</view>

@@ -1,0 +1,129 @@
+/* pages/Release/Release.wxss */
+page{
+  background-color: #f8f8f8;padding-bottom: 180rpx;
+}
+.page-section{
+  background: #fff;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f8f8f8;
+}
+textarea{
+  width: 100%;
+  padding: 25rpx 0 25rpx 20rpx;
+  line-height: 1.6;
+  box-sizing: border-box;
+  min-height: 300rpx;
+  position: relative;
+}
+textarea::after{
+  content: "*";
+  position: absolute;
+  top: 25rpx;
+  left: 0;
+  color: #fe4a00;
+}
+input{
+  padding: 25rpx 0 25rpx 20rpx;
+}
+
+.upload-section{
+  padding: 24rpx;
+}
+.upload-section .img{
+  width: 225rpx;
+  height: 225rpx;
+  margin-right: 15rpx;
+  margin-bottom: 15rpx;
+  background: rgb(221, 219, 219);
+  display: inline-table;
+}
+.upload-section .img:nth-child(3n){
+  margin-right: 0;
+}
+.upload-section .upload{
+  width: 225rpx;
+  height: 225rpx;   
+  display: inline-table;
+  border: 1px dashed rgb(221, 219, 219);
+  box-sizing: border-box;
+}
+
+.muodel{
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  background-color: #fff;
+}
+
+.pricelist{
+  padding: 20rpx 24rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.pricelist .row{
+  width: 25%;
+  padding: 10rpx;
+  box-sizing: border-box;
+  float: left;
+}
+.pricelist .row .bg{
+  border: 1px dashed #10c785;
+  text-align: center;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 10rpx;
+  color: #10c785;
+}
+.pricelist .row .bg .name{
+  font-size: 32rpx;
+  margin-bottom: 18rpx;
+}
+.pricelist .row .bg .des{
+  font-size: 24rpx;
+}
+.pricelist .row.active .bg{
+  background: #10c785;
+  color: #fff;
+}
+.extend{
+  background: #fff;
+  padding: 25rpx 24rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.message{
+  font-size: 28rpx;
+  color: #999;
+  text-align: center;
+  padding: 25rpx 0;
+}
+
+
+/* 底部 */
+.footer{
+  position: fixed;left: 0;right: 0;bottom: 0;height: 120rpx;background-color: rgb(255, 255, 255);z-index: 999;
+  box-shadow: 0px 0px 4px 0px rgba(136, 136, 136, 0.2);
+  display: flex;justify-content: space-between;align-items: center;
+}
+.footer .lt{
+  flex: 1;
+  text-align: right;
+}
+.footer .lt .price{
+  font-size: 36rpx;
+  color: #fe4a00;
+  display: inline;
+}
+.footer .pW{
+  overflow: hidden;padding: 0 24rpx;box-sizing: border-box;
+}
+.footer .fd_btn{
+  height: 84rpx;line-height: 84rpx;padding: 0 20rpx;color: #fff;font-size: 32rpx;border-radius: 4px;text-align: center;
+  background:#fe4a00;
+}
