@@ -1,0 +1,22 @@
+ <view class='scroll-view' style="width: 100%">
+   <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+    <view class="scroll-view-item {{activeIndex==index?'active':''}}" wx:for="{{navlist}}" wx:key="*" bindtap='selectpage' data-index="{{index}}">
+      {{item.name}}
+    </view>
+  </scroll-view>
+ </view>
+
+ <view class='store'>
+  <view class='list'>
+     <view class='li' wx:for="{{8}}" wx:key="*" bindtap='detailes'>
+        <view class='imgbox'>
+          <image src='../../images/product.png' class='Img'></image>
+        </view>
+        <view class='content gm'>
+           <view class='name'>商品名称 </view>
+           <view class='des'>精选商品，品质保证<text class='buy'>立刻购买</text></view>
+           <view class='activity price'>￥59.00</view>
+        </view>
+     </view> 
+  </view>
+</view>

@@ -1,0 +1,23 @@
+ <view class='scroll-view' style="width: 100%">
+   <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+    <view class="scroll-view-item {{activeIndex==index?'active':''}}" wx:for="{{navlist}}" wx:key="*" bindtap='selectpage' data-index="{{index}}">
+      {{item.name}}
+    </view>
+  </scroll-view>
+ </view>
+
+
+ <view class='store'>
+  <view class='list'>
+     <view class='li' wx:for="{{12}}" wx:key="*" bindtap='detailes'>
+        <view class='imgbox'>
+          <image src='../../images/dianpu.png' class='Img' mode="aspectFill" lazy-load></image>
+        </view>
+        <view class='content'>
+           <view class='name'>喜缘烟酒商行喜缘烟酒商行 <text class='rt'>1km</text></view>
+           <view class='des'>上海市闵行区</view>
+           <view class='activity'>全场满2000减200<text class='rt'>534人已购</text></view>
+        </view>
+     </view> 
+  </view>
+</view>

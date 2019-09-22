@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -81,6 +81,13 @@
 					"id": -1,
 					"name": "商铺详情",
 					"pathName": "pages/shopDetails/shopDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "便民服务列表",
+					"pathName": "pages/serviceList/serviceList",
 					"scene": null
 				}
 			]

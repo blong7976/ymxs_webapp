@@ -63,6 +63,11 @@ Page({
       url: "/pages/goodDetails/goodDetails",
     })
   },
+  routerTolist() {
+    wx.navigateTo({
+      url: '/pages/goodsList/goodsList',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

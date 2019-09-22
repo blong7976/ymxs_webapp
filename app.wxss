@@ -132,6 +132,7 @@
   min-height: 176rpx;
   padding-left: 118rpx;
   position: relative;
+  background: #fff;
 }
 .Circle .li .imgbox{
   position: absolute;

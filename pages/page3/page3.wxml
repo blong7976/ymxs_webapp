@@ -8,7 +8,7 @@
 
 <view class='nav'>
   <view class='ul'>
-    <view class='li' wx:for="{{navlist}}" wx:key="*">
+    <view class='li' wx:for="{{navlist}}" wx:key="*" bindtap='routerTolist'>
       <image src='{{item.icon}}' class='icon'></image>
       <view class='name'>{{item.name}}</view>
     </view>

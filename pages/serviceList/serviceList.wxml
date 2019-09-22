@@ -1,0 +1,35 @@
+ <view class='scroll-view' style="width: 100%">
+   <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+    <view class="scroll-view-item {{activeIndex==index?'active':''}}" wx:for="{{navlist}}" wx:key="*" bindtap='selectpage' data-index="{{index}}">
+      {{item.name}}
+    </view>
+  </scroll-view>
+ </view>
+
+
+
+<view class='Circle'>
+  <view class='list'>
+     <view class='li' wx:for="{{imglist}}" wx:key="*">
+        <view class='imgbox'>
+          <image src='{{item.authorIcon}}' class='Img' mode="aspectFill" lazy-load="true"></image>
+        </view>
+        <view class='content'>
+           <view class='name'>狮城哔哔 <text class='rt' bindtap='bindMakePhoneCall'>联系Ta</text></view>
+           <view class='des'>诚信长期出售，各种款式踏板摩托车，大排量机车 雅马哈 本田 铃木 川崎 哈雷 宝马 质量保证</view>
+           <view class='imglist' wx:if="{{item.picture.length>0}}">
+             <!-- 
+                1张图是 col , 
+                2=>9张图是 col-33 
+              -->
+              <view class='{{item.picture.length==1?"col":"col-33"}}'>
+                <view class='Imgbox' wx:for="{{item.picture}}" wx:key="*">
+                  <image src='{{item}}' class='img' mode="aspectFill" lazy-load="true"></image>
+                </view>
+              </view>
+           </view>
+           <view class='date'><text class='t'>52浏览</text><text class='t'>2星期前</text><text class='t'>二手摩托车</text></view>
+        </view>
+     </view> 
+  </view>
+</view>
